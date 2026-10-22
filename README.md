@@ -30,4 +30,4 @@ A complete, production-ready Point of Sale and Inventory Management System built
 - **Cashier:** cashier@stockflow.test / password
 
 ---
-*Developed by [Aapka Naam]*
+*Developed by [Muhammad Ahmad Raza]*
