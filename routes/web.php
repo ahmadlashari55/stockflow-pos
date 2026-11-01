@@ -49,6 +49,8 @@ Route::middleware('auth')->group(function () {
         Route::resource('suppliers', SupplierController::class);
         Route::resource('products', ProductController::class);
         Route::resource('expenses', App\Http\Controllers\ExpenseController::class);
+        Route::get('/reports', [App\Http\Controllers\ReportController::class, 'index'])->name('reports.index');
+        Route::get('/reports/export', [App\Http\Controllers\ReportController::class, 'exportCsv'])->name('reports.export');
     });
 });
 

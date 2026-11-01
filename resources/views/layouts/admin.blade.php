@@ -84,6 +84,12 @@
     <i class="bi bi-wallet2"></i> Expenses
 </a>
 @endcan
+
+@can('category.view')
+<a href="{{ route('reports.index') }}" class="{{ request()->is('reports*') ? 'active' : '' }}">
+    <i class="bi bi-bar-chart-line"></i> Reports
+</a>
+@endcan
             
             <hr class="text-secondary mx-3">
             
