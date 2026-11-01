@@ -48,6 +48,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('units', UnitController::class);
         Route::resource('suppliers', SupplierController::class);
         Route::resource('products', ProductController::class);
+        Route::resource('expenses', App\Http\Controllers\ExpenseController::class);
     });
 });
 
